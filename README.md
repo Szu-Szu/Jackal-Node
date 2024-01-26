@@ -20,7 +20,7 @@ Next install Go.  This will remove any instances of Go on the server and install
 rm -rf $HOME/go
 rm -rf /usr/local/go
 cd ~
-curl https://dl.google.com/go/go1.20.1.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
+curl https://dl.google.com/go/go1.21.1.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
 cat <<'EOF' >>$HOME/.profile
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
@@ -54,7 +54,7 @@ Checkout the latest version of canined
 
 ```
 git fetch --all
-git checkout v3.0.5 (or the latest version)
+git checkout v3.1.1 (or the latest version)
 ```
 `make install`
 
