@@ -67,7 +67,8 @@ Now we can initialize your node.  At this momement we'll also be naming your nod
 `canined init ["Your_node_name_here"] --chain-id=jackal-1`
 
 Now let's replace our genesis file. We'll be using some Polkachu resources here.
-[here is their website](https://polkachu.com/networks/jackal)
+[here is their website](https://polkachu.com/networks/jackal) This website has many
+resources that we will use. 
 
 
 `wget -O genesis.json https://snapshots.polkachu.com/genesis/jackal/genesis.json --inet4-only`
@@ -101,17 +102,18 @@ sudo apt install snapd -y
 sudo snap install lz4 -y
 ```
 
-This can take awhile depending on the size of the file and internet speeds
+This can take awhile depending on the size of the file and internet speeds.  You can download the snapshot
+file [here](https://www.polkachu.com/tendermint_snapshots/jackal)
 
-`wget -O jackal_6211534.tar.lz4 https://snapshots.polkachu.com/snapshots/jackal/jackal_6211534.tar.lz4 --inet4-only`
+![image](https://github.com/Szu-Szu/Jackal-Node/assets/91114388/f5ee90c9-7450-4b5b-aafe-f3def19eed09)
 
-Now let's decompress that file and place it in the right spot.
+This cannot be linked directy since a new snapshot is downloaded everyonce in awhile.  So, just use this as a guide.
 
-`lz4 -c -d jackal_6211534.tar.lz4  | tar -x -C $HOME/.canine`
 
-Let's delete the file to save some space.
+Now let's decompress that file and place it in the right spot. Similarly, the command will differ, so use this as a guide.  
 
-`rm -v jackal_6211534.tar.lz4`
+![image](https://github.com/Szu-Szu/Jackal-Node/assets/91114388/2dcc7cca-fc41-4f99-a758-f28145922a94)
+
 
 Make sure you are back in your home directory `cd`
 
